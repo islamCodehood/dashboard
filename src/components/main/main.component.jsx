@@ -6,8 +6,8 @@ import Cards from '../cards/cards.component'
 const Main = () => {
     return (
         <main>
-          <Cards />
-          <SideMenu />
+            <SideMenu />
+            <Cards />
         </main>
     )
 }

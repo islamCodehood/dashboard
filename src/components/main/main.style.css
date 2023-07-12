@@ -1,0 +1,6 @@
+main {
+    grid-area: mn;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    @apply w-screen overflow-x-auto;
+}
