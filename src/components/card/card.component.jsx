@@ -1,8 +1,10 @@
-import "./card.style.css";
+import './card.style.css'
 const Card = () => {
-  return ( 
-    <section>Card</section>
-   );
+    return (
+        <li className="card_wrapper">
+            <section className="card">card</section>
+        </li>
+    )
 }
- 
-export default Card;
+
+export default Card
