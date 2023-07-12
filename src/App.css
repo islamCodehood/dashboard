@@ -1,11 +1,15 @@
+/* * {
+    border: 1px solid;
+} */
+
 .App {
-    text-align: center;
+    width: 100%;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 35px 1fr;
+    grid-template-rows: 90px 1fr 35px;
     grid-template-areas:
-        'dm nv nv'
-        'dm hd hd'
-        'dm mn mn'
-        'ft ft ft';
+        'dm hdr'
+        'dm mn'
+        'dm ft';
 }
