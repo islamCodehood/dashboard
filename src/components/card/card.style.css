@@ -1,0 +1,7 @@
+.card_wrapper {
+    @apply w-48;
+}
+
+.card {
+    @apply w-40;
+}
