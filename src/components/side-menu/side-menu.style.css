@@ -1,0 +1,4 @@
+.side_menu {
+  @apply px-2 py-4 border-t-2 border-r-2 border-[#DEDFE3] flex flex-col gap-6;
+  grid-area: sm;
+}
