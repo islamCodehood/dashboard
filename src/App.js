@@ -1,6 +1,6 @@
 import './App.css'
 import DashboardMenu from './components/dashboard-menu/dashboard-menu.component'
-import Footer from './components/footer/footer.component'
+// import Footer from './components/footer/footer.component'
 import Header from './components/header/header.component'
 import Main from './components/main/main.component'
 
@@ -10,7 +10,7 @@ function App() {
             <DashboardMenu />
             <Header />
             <Main />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
