@@ -1,3 +1,4 @@
 footer {
-  grid-area: ft;
+    @apply bg-slate-200;
+    grid-area: ft;
 }
