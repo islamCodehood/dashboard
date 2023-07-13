@@ -1,3 +1,4 @@
 .cards {
-    @apply flex bg-slate-700;
+    @apply flex bg-[#F8F9FC] overflow-x-auto px-4;
+    grid-area: cds;
 }
