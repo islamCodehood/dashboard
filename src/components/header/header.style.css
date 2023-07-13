@@ -1,7 +1,7 @@
 header {
     grid-area: hdr;
     display: grid;
-    grid-template-rows: 40px 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
         'hd'
         'nv';
