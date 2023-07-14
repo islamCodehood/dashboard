@@ -38,3 +38,5 @@ npm install
 ```
 npm run start
 ```
+
+- Data fetched from server is logged to the console.
