@@ -1,0 +1,14 @@
+.active {
+  @apply bg-[#4830D9];
+}
+
+
+.active svg {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.active path {
+  fill: #fff;
+  stroke: #fff;
+}
