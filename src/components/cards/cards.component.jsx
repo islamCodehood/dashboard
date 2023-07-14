@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Card from '../card/card.component'
 import './cards.style.css'
 const cardsList = [
@@ -155,6 +155,18 @@ const cardsList = [
 ]
 const Cards = () => {
     const [cards, setCards] = useState(cardsList)
+    const getData = async () => {
+        try {
+            const request = await fetch('http://localhost:5555/data/all')
+            const response = await request.json()
+            return response
+        } catch (err) {
+            console.log(err)
+        }
+    }
+    useEffect(() => {
+        getData().then(data => console.log(data.data.default.objects))
+    }, [])
     return (
         <div className="cards styled-scrollbar">
             <ul className="flex gap-4 overflow-x-auto">
