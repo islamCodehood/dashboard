@@ -1,16 +1,18 @@
 // import { ReactComponent as DownArrow } from './icons/down-arrow.svg'
 import { ReactComponent as RightArrow } from './icons/right-arrow.svg'
-import { useEffect } from 'react'
 
 const Filter = ({ title, options, toggleOpen, open, id }) => {
     return (
         <div
-            onClick={() => toggleOpen(id)}
-            className={`border-2  py-2 h-12 overflow-y-hidden duration-500 ${
+            // onClick={() => toggleOpen(id)}
+            className={`cursor-pointer border-2  py-2 h-12 overflow-y-hidden duration-500 ${
                 open ? ' h-[250px]' : 'h-12'
             }`}
         >
-            <div className=" flex justify-between mb-4 px-2">
+            <div 
+            onClick={() => toggleOpen(id)}
+            
+            className=" flex justify-between mb-4 px-2">
                 <div className="text-[#1A1A1A]">{title}</div>
                 <button
                     className={`w-6 duration-200 ${
@@ -20,8 +22,8 @@ const Filter = ({ title, options, toggleOpen, open, id }) => {
                     <RightArrow />
                 </button>
             </div>
-            <div className="px-3 border-b-2 py-1.5 mb-3">
-                <label className="">
+            <div className="px-3 border-b-2 py-1.5 mb-3 hover:bg-gray-200">
+                <label className="w-full inline-block">
                     <input type="checkbox" name="" value="Select All" />
                     <span className="ml-2">Select All</span>
                 </label>
@@ -32,9 +34,10 @@ const Filter = ({ title, options, toggleOpen, open, id }) => {
                 }`}
             >
                 {options.map((option, idx) => (
-                    <li key={idx} className="px-3">
-                        <label className="">
+                    <li key={idx} className="px-3 hover:bg-gray-200">
+                        <label className="w-full inline-block">
                             <input
+                             className='checked:bg-blue-500'
                                 type="checkbox"
                                 name=""
                                 value={option.title}
