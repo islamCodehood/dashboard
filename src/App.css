@@ -4,7 +4,7 @@
 
 .App {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 45px 1fr;
     grid-template-rows: auto 1fr 35px;
@@ -12,4 +12,27 @@
         'dm hdr'
         'dm mn'
         'dm mn';
+}
+
+.styled-scrollbar {
+    /* Foreground, Background */
+    scrollbar-color: #999 #333;
+}
+.styled-scrollbar::-webkit-scrollbar {
+    width:5px; /* Mostly for vertical scrollbar */
+    height: 10px; /* Mostly for horizontal scrollbar */
+    
+}
+.styled-scrollbar::-webkit-scrollbar-thumb {
+    /* Foreground */
+    background: #999;
+    border-radius: 5px;
+}
+
+.styled-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #8f8f8f;
+}
+.styled-scrollbar::-webkit-scrollbar-track {
+    /* Background */
+    background: #e5e4e4;
 }
