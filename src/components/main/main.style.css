@@ -2,13 +2,18 @@ main {
     grid-area: mn;
     display: grid;
     grid-template-columns: 280px 1fr;
-    grid-template-rows: 40px 1fr;
+    grid-template-rows: 40px 60px 1fr;
     grid-template-areas: "sm ow"
-                        "sm cds";
+                        "sm cow"
+                        "sm cds"   ;
 }
 
 .options-wrapper {
-    @apply flex justify-between px-4;
+    @apply flex justify-between px-4 bg-[#F8F9FC];
     grid-area: ow;
+}
+.cards-options-wrapper {
+    @apply flex justify-between px-4 bg-[#F8F9FC] border-t-2 ;
+    grid-area: cow;
 }
 
