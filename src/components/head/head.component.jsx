@@ -1,3 +1,4 @@
+import UserDropdown from '../user-dropdown/user-dropdown.component'
 import './head.style.css'
 
 const Head = () => {
@@ -27,9 +28,7 @@ const Head = () => {
                     alt="logo"
                     className="w-7 h-7"
                 />
-                <div className="w-10 h-10 bg-[#E6E9EE] rounded-full flex justify-center items-center text-[#808893] font-semibold">
-                    AK
-                </div>
+                <UserDropdown />
             </div>
         </div>
     )
