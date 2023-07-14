@@ -3,7 +3,7 @@ import './side-menu.style.css'
 
 const SideMenu = () => {
     return <aside className="side_menu">
-        <h2>Filter</h2>
+        <h2 className="text-lg font-semibold">Filters</h2>
         <div>
             <Filters />
         </div>
