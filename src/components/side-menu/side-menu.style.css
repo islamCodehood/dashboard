@@ -1,4 +1,20 @@
 .side_menu {
-  @apply px-2 py-4 border-t-2 border-r-2 border-[#DEDFE3] flex flex-col gap-6;
+  @apply relative px-2 py-4 border-t-2 border-r-2 border-[#DEDFE3] flex flex-col gap-6;
   grid-area: sm;
+}
+
+.side_menu::after {
+  position: absolute;
+  content: '\003C';
+  color: #4830D9;
+  right: -12.5px;
+  top: 25px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: white;
+  @apply border-2
 }
