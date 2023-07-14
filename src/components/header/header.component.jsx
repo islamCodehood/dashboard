@@ -5,8 +5,8 @@ import './header.style.css'
 const Header = () => {
     return (
         <header>
-            <Nav />
             <Head />
+            <Nav />
         </header>
     )
 }
