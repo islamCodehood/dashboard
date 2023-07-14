@@ -20,8 +20,8 @@ const Main = () => {
                 <CardsOptions />
             </div>
             <Routes>
-                <Route path="/" element={<Cards  />} />
-				<Route path="/charts" element={<Charts />} />
+                <Route path="/" element={<Cards />} />
+                <Route path="/charts" element={<Charts />} />
             </Routes>
         </main>
     )

@@ -109,7 +109,7 @@ const Filters = () => {
     const toggleOpen = (id) => {
         console.log(id)
         const newFilters = filters.map((filterItem) => {
-            if (filterItem.id === id && !filterItem.open ) {
+            if (filterItem.id === id && !filterItem.open) {
                 return { ...filterItem, open: true }
             }
             return { ...filterItem, open: false }

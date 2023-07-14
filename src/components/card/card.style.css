@@ -8,7 +8,7 @@
 .connector {
     position: relative;
 }
-.connector::after{
+.connector::after {
     position: absolute;
     content: '>';
     color: white;
@@ -19,5 +19,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @apply font-semibold text-lg
+    @apply font-semibold text-lg;
 }

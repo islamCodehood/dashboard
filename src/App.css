@@ -19,9 +19,8 @@
     scrollbar-color: #999 #333;
 }
 .styled-scrollbar::-webkit-scrollbar {
-    width:5px; /* Mostly for vertical scrollbar */
+    width: 5px; /* Mostly for vertical scrollbar */
     height: 10px; /* Mostly for horizontal scrollbar */
-    
 }
 .styled-scrollbar::-webkit-scrollbar-thumb {
     /* Foreground */

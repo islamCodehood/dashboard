@@ -1,12 +1,12 @@
 .search {
-  position: relative;
+    position: relative;
 }
 .search::before {
-  content: "";
-  position: absolute;
-  right: 10px;
-  top: 0;
-  bottom: 0;
-  width: 20px;
-  background: url("./icons/search.svg") center / contain no-repeat;
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: url('./icons/search.svg') center / contain no-repeat;
 }

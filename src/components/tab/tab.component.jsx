@@ -1,12 +1,12 @@
-import { useEffect } from "react"
-import { Link } from "react-router-dom"
+import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 const Tab = ({ title, active, toggleActive, id, path }) => {
     useEffect(() => {
         console.log(active)
-      }, [active])
+    }, [active])
     return (
         <Link
-        to={path}
+            to={path}
             className={`text-[#1A1A1A] font-semibold px-4 py-2  ${
                 active
                     ? 'border-[2.5px] border-t-[#4830D9] border-b-0 bg-white'

@@ -3,7 +3,6 @@ import { ReactComponent as RightArrow } from './icons/right-arrow.svg'
 import { useEffect } from 'react'
 
 const Filter = ({ title, options, toggleOpen, open, id }) => {
-
     return (
         <div
             onClick={() => toggleOpen(id)}
@@ -27,7 +26,11 @@ const Filter = ({ title, options, toggleOpen, open, id }) => {
                     <span className="ml-2">Select All</span>
                 </label>
             </div>
-            <ul className={`styled-scrollbar duration-500  ${open ? "h-[150px] overflow-y-auto" : "h-0"}`}>
+            <ul
+                className={`styled-scrollbar duration-500  ${
+                    open ? 'h-[150px] overflow-y-auto' : 'h-0'
+                }`}
+            >
                 {options.map((option, idx) => (
                     <li key={idx} className="px-3">
                         <label className="">

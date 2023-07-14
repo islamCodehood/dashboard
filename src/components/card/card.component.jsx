@@ -12,8 +12,9 @@ const Card = ({ bg, border, title, list, after, connected }) => {
                     {list.map((item, idx) => (
                         <li
                             key={idx}
-                            className={`relative mb-1 px-3 py-2 odd:bg-gray-200 text-sm font-semibold connector ${item.connected ? after: ""}`}
-                            
+                            className={`relative mb-1 px-3 py-2 odd:bg-gray-200 text-sm font-semibold connector ${
+                                item.connected ? after : ''
+                            }`}
                         >
                             {/*  */}
                             {item.title}
