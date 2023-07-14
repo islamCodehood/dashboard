@@ -107,7 +107,6 @@ const filterItems = [
 const Filters = () => {
     const [filters, setFilters] = useState(filterItems)
     const toggleOpen = (id) => {
-        console.log(id)
         const newFilters = filters.map((filterItem) => {
             if (filterItem.id === id && !filterItem.open) {
                 return { ...filterItem, open: true }

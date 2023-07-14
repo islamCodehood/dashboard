@@ -18,9 +18,6 @@ const Tabs = () => {
         )
     }
 
-    useEffect(() => {
-        console.log(tabs)
-    }, [tabs])
     return (
         <div className="flex">
             {tabs.map((tab) => (

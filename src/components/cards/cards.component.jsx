@@ -165,6 +165,7 @@ const Cards = () => {
         }
     }
     useEffect(() => {
+        //get data from server and log it to the console
         getData().then((data) => console.log(data.data.default.objects))
     }, [])
     return (

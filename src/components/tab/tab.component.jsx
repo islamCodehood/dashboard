@@ -1,9 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 const Tab = ({ title, active, toggleActive, id, path }) => {
-    useEffect(() => {
-        console.log(active)
-    }, [active])
+
     return (
         <Link
             to={path}

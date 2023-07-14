@@ -1,7 +1,6 @@
 import './dashboard-menu-button.style.css'
 
 const DashboardMenuButton = ({ path, active, toggleActiveIcon, id }) => {
-    console.log(path)
     return (
         <div>
             <div
