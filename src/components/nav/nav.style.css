@@ -1,4 +1,4 @@
 nav {
     grid-area: nv;
-    @apply bg-[#F8F9FC];
+    @apply bg-[#F8F9FC] p-4;
 }
