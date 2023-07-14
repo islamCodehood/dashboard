@@ -1,6 +1,7 @@
 import './nav.style.css'
 import { ReactComponent as DownArrow } from './icons/down-arrow.svg'
 import { ReactComponent as MenuVertical } from './icons/menu-vertical.svg'
+import MenuButton from '../menu-button/menu-button.component'
 
 const Nav = () => {
     return (
@@ -16,10 +17,8 @@ const Nav = () => {
                     </span>
                 </button>
             </div>
+            <MenuButton />
 
-            <button className="flex justify-between items-center w-8 px-1.5 py-1 bg-white rounded-md shadow-lg">
-                <MenuVertical />
-            </button>
         </nav>
     )
 }
