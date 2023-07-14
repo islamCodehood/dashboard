@@ -9,10 +9,10 @@ const Filter = ({ title, options, toggleOpen, open, id }) => {
                 open ? ' h-[250px]' : 'h-12'
             }`}
         >
-            <div 
-            onClick={() => toggleOpen(id)}
-            
-            className=" flex justify-between mb-4 px-2">
+            <div
+                onClick={() => toggleOpen(id)}
+                className=" flex justify-between mb-4 px-2"
+            >
                 <div className="text-[#1A1A1A]">{title}</div>
                 <button
                     className={`w-6 duration-200 ${
@@ -37,7 +37,7 @@ const Filter = ({ title, options, toggleOpen, open, id }) => {
                     <li key={idx} className="px-3 hover:bg-gray-200">
                         <label className="w-full inline-block">
                             <input
-                             className='checked:bg-blue-500'
+                                className="checked:bg-blue-500"
                                 type="checkbox"
                                 name=""
                                 value={option.title}

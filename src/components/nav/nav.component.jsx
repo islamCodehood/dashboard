@@ -18,7 +18,6 @@ const Nav = () => {
                 </button>
             </div>
             <MenuButton />
-
         </nav>
     )
 }

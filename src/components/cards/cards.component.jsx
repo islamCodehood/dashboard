@@ -165,7 +165,7 @@ const Cards = () => {
         }
     }
     useEffect(() => {
-        getData().then(data => console.log(data.data.default.objects))
+        getData().then((data) => console.log(data.data.default.objects))
     }, [])
     return (
         <div className="cards styled-scrollbar">

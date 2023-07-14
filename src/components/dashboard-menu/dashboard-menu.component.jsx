@@ -10,51 +10,49 @@ import { ReactComponent as Twitter } from './icons/twitter.svg'
 import { ReactComponent as Data } from './icons/data.svg'
 import { ReactComponent as Report } from './icons/report.svg'
 
-
 const iconsList = [
     {
-        id: "1",
-        path: <Burger /> ,
+        id: '1',
+        path: <Burger />,
         active: true,
     },
     {
-        id: "2",
-        path: <Certificate /> ,
+        id: '2',
+        path: <Certificate />,
         active: false,
     },
     {
-        id: "3",
-        path: <Envelope /> ,
+        id: '3',
+        path: <Envelope />,
         active: false,
     },
     {
-        id: "4",
-        path: <Doc /> ,
+        id: '4',
+        path: <Doc />,
         active: false,
     },
     {
-        id: "5",
+        id: '5',
         path: <Rss />,
         active: false,
     },
     {
-        id: "6",
+        id: '6',
         path: <Twitter />,
         active: false,
     },
     {
-        id: "7",
+        id: '7',
         path: <Data />,
         active: false,
     },
     {
-        id: "8",
+        id: '8',
         path: <Report />,
         active: false,
     },
 ]
 const DashboardMenu = () => {
-
     const [icons, setIcons] = useState(iconsList)
     const toggleActiveIcon = (id) => {
         const newIcons = icons.map((icon) => {
@@ -75,13 +73,14 @@ const DashboardMenu = () => {
                 <div className="text-white text-[8px] font-bold">CTIX</div>
             </div>
 
-
             <div className="grow flex flex-col gap-6">
-                {
-                    icons.map((icon, idx) => 
-                    <DashboardMenuButton key={idx} {...icon} toggleActiveIcon={toggleActiveIcon} />
-                    )
-                }
+                {icons.map((icon, idx) => (
+                    <DashboardMenuButton
+                        key={idx}
+                        {...icon}
+                        toggleActiveIcon={toggleActiveIcon}
+                    />
+                ))}
             </div>
             <div className="flex">
                 <div>

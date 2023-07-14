@@ -1,9 +1,7 @@
-import { useState } from "react"
+import { useState } from 'react'
 
 const UserDropdown = () => {
-
-  const [open, setOpen] = useState(false)
-
+    const [open, setOpen] = useState(false)
 
     return (
         <div className="relative">
@@ -19,7 +17,9 @@ const UserDropdown = () => {
 
             <div
                 id="dropdownInformation"
-                className={`${open ? "inline-block" : "hidden"} absolute top-full right-full  z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 `}
+                className={`${
+                    open ? 'inline-block' : 'hidden'
+                } absolute top-full right-full  z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 `}
             >
                 <div className="px-4 py-3 text-sm text-gray-900">
                     <div>Ahmed Kamal</div>
@@ -31,7 +31,7 @@ const UserDropdown = () => {
                 >
                     <li>
                         <a
-                          onClick={() => setOpen(false)}
+                            onClick={() => setOpen(false)}
                             href="#"
                             className="block px-4 py-2 hover:bg-gray-100"
                         >
@@ -40,7 +40,7 @@ const UserDropdown = () => {
                     </li>
                     <li>
                         <a
-                        onClick={() => setOpen(false)}
+                            onClick={() => setOpen(false)}
                             href="#"
                             className="block px-4 py-2 hover:bg-gray-100"
                         >
@@ -49,18 +49,17 @@ const UserDropdown = () => {
                     </li>
                     <li>
                         <a
-                        onClick={() => setOpen(false)}
+                            onClick={() => setOpen(false)}
                             href="#"
                             className="block px-4 py-2 hover:bg-gray-100"
                         >
                             Settings
                         </a>
                     </li>
-                    
                 </ul>
-                <div className="py-2">  
+                <div className="py-2">
                     <a
-                    onClick={() => setOpen(false)}
+                        onClick={() => setOpen(false)}
                         href="#"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
